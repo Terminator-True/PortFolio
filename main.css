@@ -1,0 +1,125 @@
+body {
+    font-family: "Audiowide", sans-serif;
+}
+  
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.main {
+margin-top: 15%;
+transition: margin-left .5s;
+padding: 16px;
+font-size: 28px; /* Increased text to enable scrolling */
+padding: 0px 10px;
+}
+
+img{
+width: 120px;
+}
+
+/* #title{
+
+} */
+
+.open-btn{
+    position: fixed;
+    top: 0;
+}
+#bio{
+    width: 80%;
+    padding: 30px;
+}
+
+#perfil{
+    width: 300px;
+}
+
+#espacio{
+    margin-bottom: 20%;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+
+  .wave {
+    background: rgb(0 89 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+a{
+    text-decoration: none;
+}

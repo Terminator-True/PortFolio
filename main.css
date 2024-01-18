@@ -127,9 +127,8 @@ a{
 
 .tec-image{
     width: 64px;
-    height: 64px;
 }
 
-i {
+li i {
     color:black;
 }
